@@ -1,0 +1,6 @@
+/home/hym/workspace/work1/custom-auth/credential-server/src/main/java/com/keycloak/credentialserver/service/IdentityProofService.java
+/home/hym/workspace/work1/custom-auth/credential-server/src/main/java/com/keycloak/credentialserver/CredentialServerApplication.java
+/home/hym/workspace/work1/custom-auth/credential-server/src/main/java/com/keycloak/credentialserver/mapper/IdentityProofMapper.java
+/home/hym/workspace/work1/custom-auth/credential-server/src/main/java/com/keycloak/credentialserver/entity/IdentityProof.java
+/home/hym/workspace/work1/custom-auth/credential-server/src/main/java/com/keycloak/credentialserver/App.java
+/home/hym/workspace/work1/custom-auth/credential-server/src/main/java/com/keycloak/credentialserver/controller/CredentialController.java

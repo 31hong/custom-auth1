@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>test-app · 登录成功</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, "Helvetica Neue", Arial, "PingFang SC",
+                   "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #eef2f7, #dbe7f3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background: #fff;
+      width: 420px;
+      padding: 32px 36px;
+      border-radius: 14px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+      text-align: center;
+      animation: fadeIn 0.6s ease;
+    }
+
+    .icon {
+      font-size: 56px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 26px;
+      color: #2d3748;
+    }
+
+    p {
+      margin: 12px 0;
+      color: #4a5568;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    hr {
+      margin: 24px 0;
+      border: none;
+      height: 1px;
+      background: #e2e8f0;
+    }
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+      text-align: left;
+      font-size: 14px;
+      color: #4a5568;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      padding-left: 18px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #38a169;
+      font-weight: bold;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 6px 14px;
+      background: #e6fffa;
+      color: #065f46;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="icon">🎉</div>
+
+    <h1>欢迎来到 test-app</h1>
+
+    <p>
+      你已经通过 <strong>Keycloak</strong>  
+      <br>
+      设备认证 / 账号密码登录成功
+    </p>
+
+    <span class="badge">OIDC 登录已完成</span>
+
+    <hr>
+
+    <p><strong>说明：</strong></p>
+    <ul>
+      <li>这是 Keycloak 登录后的回调页面</li>
+      <li>表示认证流程已完整结束</li>
+      <li>当前用户已建立安全会话</li>
+    </ul>
+  </div>
+</body>
+</html>
+

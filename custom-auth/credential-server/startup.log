@@ -1,0 +1,62 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------< com.keycloak.credentialserver:credential-server >-----------
+[INFO] Building credential-server 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:2.6.4:run (default-cli) > test-compile @ credential-server >>>
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ credential-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 2 resources
+[INFO] Copying 1 resource to mapper
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ credential-server ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /home/hym/workspace/work1/custom-auth/credential-server/target/classes
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ credential-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /home/hym/workspace/work1/custom-auth/credential-server/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ credential-server ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/hym/workspace/work1/custom-auth/credential-server/target/test-classes
+[INFO] 
+[INFO] <<< spring-boot:2.6.4:run (default-cli) < test-compile @ credential-server <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:2.6.4:run (default-cli) @ credential-server ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.4)
+
+2025-12-20 00:00:06.595  INFO 41560 --- [           main] c.k.c.CredentialServerApplication        : Starting CredentialServerApplication using Java 17.0.17 on hym-82jk with PID 41560 (/home/hym/workspace/work1/custom-auth/credential-server/target/classes started by hym in /home/hym/workspace/work1/custom-auth/credential-server)
+2025-12-20 00:00:06.596  INFO 41560 --- [           main] c.k.c.CredentialServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-12-20 00:00:06.997  INFO 41560 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2025-12-20 00:00:07.002  INFO 41560 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-20 00:00:07.002  INFO 41560 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2025-12-20 00:00:07.039  INFO 41560 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-20 00:00:07.039  INFO 41560 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 422 ms
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.1 
+2025-12-20 00:00:07.329  INFO 41560 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2025-12-20 00:00:07.334  INFO 41560 --- [           main] c.k.c.CredentialServerApplication        : Started CredentialServerApplication in 0.888 seconds (JVM running for 1.015)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.430 s
+[INFO] Finished at: 2025-12-20T00:00:07+08:00
+[INFO] ------------------------------------------------------------------------
