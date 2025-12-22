@@ -1,4 +1,5 @@
 # custom-auth1
 服务器和认证器部署方式没变,数据库更改966c4778b4ccddf14bd7e8ab30b77e51073dd2f22aa60c8ee07db6890827ac97这个对应的phoneid为用户id用于返回在keycloak服务器进行比对.
+
 测试链接:
 http://localhost:8080/realms/myrealm/protocol/openid-connect/auth?client_id=test-app&redirect_uri=http://localhost:3000&response_type=code&scope=openid&device_credential_hash=966c4778b4ccddf14bd7e8ab30b77e51073dd2f22aa60c8ee07db6890827ac97
