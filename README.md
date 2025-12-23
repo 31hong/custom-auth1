@@ -7,7 +7,9 @@
 python -m http.server 3000
 
 client设置:
-![Uploading image.png…]()
+Root URL :http://localhost:3000
+Valid redirect URIs:http://localhost:3000/*
+Web origins:http://localhost:3000
 
 
 测试链接:
