@@ -1,12 +1,14 @@
 # custom-auth1
 服务器和认证器部署方式没变
+更改服务器代码让其返回数据库新增列userid (我改过了,重新下一下credential-server就可以✔)
 
-数据库更改966c4778b4ccddf14bd7e8ab30b77e51073dd2f22aa60c8ee07db6890827ac97这个对应的phoneid为用户id用于返回在keycloak服务器进行比对
+数据库新增user_id列为用户id用于返回在keycloak服务器进行比对
 
 启动test-app:
 python -m http.server 3000
 
 client设置:
+
 Root URL :http://localhost:3000
 
 Valid redirect URIs:http://localhost:3000/*
