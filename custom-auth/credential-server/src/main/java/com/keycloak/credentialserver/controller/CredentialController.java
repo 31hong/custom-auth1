@@ -1,4 +1,4 @@
-package com.keycloak.credentialserver.controller; // 包名与路径完全一致
+package com.keycloak.credentialserver.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,15 +9,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.keycloak.credentialserver.entity.IdentityProof; // 导入当前包下的entity
-import com.keycloak.credentialserver.service.IdentityProofService; // 导入当前包下的service
+import com.keycloak.credentialserver.entity.IdentityProof;
+import com.keycloak.credentialserver.service.IdentityProofService;
 
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * 凭证比对接口（对外暴露）
- */
 @RestController
 @RequestMapping("/api")
 public class CredentialController {
@@ -38,7 +35,8 @@ public class CredentialController {
 
             if (validProof != null) {
                 response.put("success", true);
-                response.put("userId", validProof.getPhoneNumberHash()); //  返回phoneNumberHash作为用户ID
+                // 核心修改：返回数据库中的 userId 而非 phoneNumberHash
+                response.put("userId", validProof.getUserId()); // 替换为 getUserId()
                 response.put("message", "凭证比对成功");
                 return ResponseEntity.ok(response);
             } else {

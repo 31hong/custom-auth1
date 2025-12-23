@@ -1,6 +1,6 @@
 com/keycloak/credentialserver/entity/IdentityProof.class
 com/keycloak/authserver/App.class
 com/keycloak/credentialserver/mapper/IdentityProofMapper.class
-com/keycloak/credentialserver/CredentialServerApplication.class
 com/keycloak/credentialserver/controller/CredentialController.class
+com/keycloak/credentialserver/CredentialServerApplication.class
 com/keycloak/credentialserver/service/IdentityProofService.class
