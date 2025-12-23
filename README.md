@@ -6,6 +6,8 @@
 启动test-app:
 python -m http.server 3000
 
+client设置:
+![Uploading image.png…]()
 
 
 测试链接:
