@@ -8,7 +8,9 @@ python -m http.server 3000
 
 client设置:
 Root URL :http://localhost:3000
+
 Valid redirect URIs:http://localhost:3000/*
+
 Web origins:http://localhost:3000
 
 
