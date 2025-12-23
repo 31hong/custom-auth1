@@ -13,6 +13,9 @@ Valid redirect URIs:http://localhost:3000/*
 
 Web origins:http://localhost:3000
 
+keycloak管理:
+<img width="982" height="611" alt="微信图片_20251223232734_49_8" src="https://github.com/user-attachments/assets/08765c18-c480-46e3-95e4-3e9ca705c45a" />
+
 
 测试链接:
 http://localhost:8080/realms/myrealm/protocol/openid-connect/auth?client_id=test-app&redirect_uri=http://localhost:3000&response_type=code&scope=openid&device_credential_hash=966c4778b4ccddf14bd7e8ab30b77e51073dd2f22aa60c8ee07db6890827ac97
