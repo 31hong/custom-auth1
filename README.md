@@ -21,6 +21,8 @@
 curl -X POST http://localhost:8081/api/fill-empty-userid
 
 成功与否你开着keycloak服务器的用户那里看最直观或者看数据库变化也可以
+
+
 模拟采集完成后数据入库时同步创建用户:
 
 curl -X POST http://localhost:8081/api/save-auto-user \
